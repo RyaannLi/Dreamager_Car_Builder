@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  background: #141418;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 1000px;
+  margin: 60px;
+  margin-left: auto;
+  padding: 24px;
+}
+
+.builder {
+    display: flex; /*uses flexbox to align paint preveiw and picker in one line */
+    gap: 24px;
+}
+
+
+#paint-preview {
+  height: 240px;
+  margin: 24px 0;
+  width: 600px;
+  border-radius: 16px;
+  background: #8054ff;
+  display: inline-grid;
+  place-items: center;
+  color: #ffffff;
+  text-shadow: 0 1px 4px #000000;
+}
+
+.controls {/*customizes the grouped elements*/
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+#paint-color {
+    display: inline-block;
+    margin: 16px auto;
+}
+
+#paint-reset{
+    margin: 16px auto;
+}
+
+
+input[type="color"] {
+  margin-left: 12px;
+  cursor: pointer;
+}
