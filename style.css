@@ -21,19 +21,27 @@ main {
 #paint-preview {
   height: 240px;
   margin: 24px 0;
-  width: 600px;
+  width: 400px;
   border-radius: 16px;
   background: #8054ff;
   display: inline-grid;
   place-items: center;
   color: #ffffff;
   text-shadow: 0 1px 4px #000000;
+  overflow: hidden;
+  min-width: 0;
+}
+
+#paint-preview canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .controls {/*customizes the grouped elements*/
     display: flex;
     flex-direction: column;
-    margin: 40px;
+    margin: 24px;
 }
 
 #paint-color {
